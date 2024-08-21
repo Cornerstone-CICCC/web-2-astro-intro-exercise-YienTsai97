@@ -1,0 +1,16 @@
+---
+import Header from "../components/Header.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+const pageTitle = "About Us";
+const pageHeadTitle = "About - My Astro Website";
+---
+
+<BaseLayout pageHeadTitle={pageHeadTitle}>
+    <Header activeItem="about" />
+    <main>
+        <h1>{pageTitle}</h1>
+        <p>
+            This is the about page where you can learn more about our website.
+        </p>
+    </main>
+</BaseLayout>
